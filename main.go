@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 
+	"quizz/findbox"
 	"quizz/meetanimal"
 	"quizz/wakeup"
 )
 
 func main() {
-	fmt.Printf("Game started: \n")
+	fmt.Printf("Гра розпочинається: \n")
 
 	Stephen := wakeup.Character{
 		Name: "Стівен",
@@ -21,4 +22,5 @@ func main() {
 
 	wakeup.Wakeup(Stephen)
 	meetanimal.Meetanimal(Stephen)
+	findbox.Findbox(Stephen)
 }
